@@ -204,9 +204,9 @@ const Layout = ({ children, customSEO }) => {
         <GlobalStyle />
         {children}
         <Footer>
-          &copy; 2019 by LekoArts. All rights reserved. <br />
-          <a href="https://github.com/LekoArts/gatsby-starter-minimal-blog">GitHub Repository</a> <br />
-          <span>Last build: {buildTime}</span>
+          &copy; 2019 / Mik@el. <br />
+          <a href="https://github.com/Mikeyouf/gatsby-ferme-du-gapeau">GitHub</a> <br />
+          <span>Dernière mise à jour: {buildTime}</span>
         </Footer>
       </>
     </ThemeProvider>
