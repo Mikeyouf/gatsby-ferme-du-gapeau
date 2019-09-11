@@ -6,6 +6,8 @@ import SEO from './SEO'
 import theme from '../../config/theme'
 import useBuildTime from '../hooks/useBuildTime'
 
+import Header from '../components/Header'
+
 const GlobalStyle = createGlobalStyle`
   *,
   *:before,
@@ -200,6 +202,7 @@ const Layout = ({ children, customSEO }) => {
   return (
     <ThemeProvider theme={theme}>
       <>
+        <Header/>
         {!customSEO && <SEO buildTime={buildTime} />}
         <GlobalStyle />
         {children}
