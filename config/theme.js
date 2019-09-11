@@ -28,6 +28,8 @@ const fontFamily = {
 
 const breakpoints = {
   tablet: '1200px',
+  tabletPortrait: '900px',
+  phonePaysage: '780px',
   phone: '600px',
 }
 

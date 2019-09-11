@@ -1,6 +1,7 @@
 import 'typeface-bitter'
 import 'typeface-open-sans'
 import 'typeface-josefin-sans'
+import 'typeface-poppins'
 
 import { wrapRootElement as wrap } from './wrap-root-element'
 
