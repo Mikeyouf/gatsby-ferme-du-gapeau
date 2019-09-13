@@ -16,6 +16,11 @@ const LinkApp = styled.li`
     text-decoration: none;
     list-style: none;
     margin: 0 2em;
+    transition: 0.3s all ease-in;
+    &:hover {
+        transform: scale(1.1);
+        transition: 0.3s all ease-in;
+    }
     @media (max-width: ${props => props.theme.breakpoints.tablet}) {
         margin: 0 1em;
     }

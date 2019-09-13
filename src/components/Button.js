@@ -5,6 +5,7 @@ const Button = styled.button`
   border: none;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   border-radius: ${props => (props.big ? '1.5rem' : '1rem')};
   font-size: ${props => (props.big ? '1.2rem' : '1rem')};
   color: ${props => props.theme.colors.white};
