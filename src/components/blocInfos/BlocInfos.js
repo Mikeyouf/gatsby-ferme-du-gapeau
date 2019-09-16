@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import phone from '../../img/phone.svg'
 import map from '../../img/map.svg'
 import clock from '../../img/clock.svg'
+import actu from '../../img/actu.jpg'
 
 const Bloc = styled.div`
     border: 1px solid black;
@@ -33,11 +34,10 @@ const Bloc = styled.div`
     }
 
     :nth-child(4) {
-        background-color: grey;
         flex-grow: 1.8;
         position: relative;
 
-        div {
+        .bloc-actu {
             position: absolute;
             padding: 1.2em;
             bottom: 0;
@@ -52,9 +52,26 @@ const Bloc = styled.div`
                 margin-top: 0;
                 text-align: center;
                 color: #fff;
-                font-family: 'josefin sans'
+                font-family: 'josefin sans';
                 font-weight: 500;
                 text-transform: uppercase;
+                z-index: 5;
+            }
+
+            .actualites {
+                display: flex;
+                align-items: center;
+
+                img {
+                    width: 120px;
+                    height: 120px;
+                }
+
+                p {
+                    color: #fff;
+                    text-align: justify;
+                    font-family: 'poppins';
+                }
             }
         }
     }
@@ -84,8 +101,12 @@ const BlocInfos = () => (
             </div>
         </Bloc>
         <Bloc>
-            <div>
+            <div className="bloc-actu">
                 <h3>Dernières nouvelles</h3>
+                <div className="actualites">
+                    <img src={actu} alt="actualité"/>
+                    <p>Ainsi s'est transmise la présidence de l'AVATH entre monsieur Michel CAPONY et monsieur Pierre LAPORTE, notre nouveau Président.</p>
+                </div>
             </div>
         </Bloc>
     </>
