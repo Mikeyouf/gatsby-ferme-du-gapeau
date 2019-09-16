@@ -45,7 +45,6 @@ const Hero = styled.div`
   display: flex;
   justify-content: center;
   align-content: center;
-  position: relative;
 
   h1, h3 {
     margin: 0;
@@ -118,8 +117,10 @@ const IndexPage = ({
               <BoutonCTA2>Nous contacter</BoutonCTA2>
             </div>
           </div>
-          <BlocInfos/>
         </Hero>
+        <section style={{ height: '160px', display: 'flex', marginTop: `-80px` }}>
+          <BlocInfos/>
+        </section>
         <SectionTitle>Latest stories</SectionTitle>
         {posts.map(post => (
           <Article
