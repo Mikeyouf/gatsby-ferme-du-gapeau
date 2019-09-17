@@ -12676,6 +12676,11 @@ typeface-bitter@^0.0.71:
   resolved "https://registry.yarnpkg.com/typeface-bitter/-/typeface-bitter-0.0.71.tgz#bfd97a1b3a52c1275319ca169f92e3419c7abf8e"
   integrity sha512-F8fJUCWtVTkgw2UfxaYOQt3lPsrmGKYiUC3ZOBcS88QuRpN0qd29s07o2q07vow2E+KP8LLuezbrZ/rTMw/XlQ==
 
+typeface-great-vibes@^0.0.72:
+  version "0.0.72"
+  resolved "https://registry.yarnpkg.com/typeface-great-vibes/-/typeface-great-vibes-0.0.72.tgz#e7345ff94b73ab22a0a26414beccf8769559426a"
+  integrity sha512-XxvZ4AL6vQe+yn6CGWxgXWpfwLEEa1Ksdn0sfPvI3KyJ9EnQ25cnKhcQ/WSTL/yz+UherXYLgyZ2g5MxpniRyg==
+
 typeface-josefin-sans@^0.0.75:
   version "0.0.75"
   resolved "https://registry.yarnpkg.com/typeface-josefin-sans/-/typeface-josefin-sans-0.0.75.tgz#15e26410172c47bf112aa8fb7d29e887f2344d50"

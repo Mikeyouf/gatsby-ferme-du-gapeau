@@ -102,7 +102,7 @@ const BlocInfos = () => (
         </Bloc>
         <Bloc>
             <div className="bloc-actu">
-                <h3>Dernières nouvelles</h3>
+                <h3>Actualités</h3>
                 <div className="actualites">
                     <img src={actu} alt="actualité"/>
                     <p>Ainsi s'est transmise la présidence de l'AVATH entre monsieur Michel CAPONY et monsieur Pierre LAPORTE, notre nouveau Président.</p>
