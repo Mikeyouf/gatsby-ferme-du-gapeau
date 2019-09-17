@@ -7,6 +7,7 @@ import { useInterval } from '../components/useInterval'
 import { Layout, Article, Wrapper, Button, SectionTitle } from '../components'
 import BlocInfos from '../components/blocInfos/BlocInfos'
 import BlocHistoire from '../components/blocHistoire/BlocHistoire'
+import BlocPoles from '../components/blocPoles/BlocPoles'
 
 import bck1 from '../../static/fdg4.jpg'
 import bck2 from '../../static/fdg5.jpg'
@@ -124,6 +125,9 @@ const IndexPage = ({
         </section>
         <section style={{ height: '480px', display: 'flex' }}>
           <BlocHistoire/>
+        </section>
+        <section style={{ height: '400px', display: 'flex' }}>
+          <BlocPoles/>
         </section>
         <SectionTitle>Latest stories</SectionTitle>
         {posts.map(post => (
