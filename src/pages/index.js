@@ -118,7 +118,7 @@ const IndexPage = ({
       <Content>
         <Hero>
           <div>
-            <h1>La ferme du Gapeau</h1>
+            <h1>La Ferme du Gapeau</h1>
             <h3>Entreprise d'aide et de soutien par le travail</h3>
             <div>
               <BoutonCTA1>Demander un devis</BoutonCTA1>
