@@ -4,6 +4,7 @@ import styled, {keyframes} from 'styled-components'
 import { darken, lighten } from 'polished'
 import { Link } from 'gatsby'
 
+
 import theme from '../../config/theme'
 
 import logo from '../../static/logo2.png'

@@ -85,7 +85,7 @@ const Hero = styled.div`
 `
 
 const BoutonCTA1 = styled(Button)`
-  width: 200px;
+  width: 280px;
   text-align: center;
   margin: 0 1em;
   padding: 0.5rem 1.75rem;
@@ -115,7 +115,7 @@ const IndexPage = ({
             <h1>La ferme du Gapeau</h1>
             <h3>Entreprise d'aide et de soutien par le travail</h3>
             <div>
-              <BoutonCTA1>Nous suivre</BoutonCTA1>
+              <BoutonCTA1>Demander un devis</BoutonCTA1>
               <BoutonCTA2>Nous contacter</BoutonCTA2>
             </div>
           </div>
@@ -129,7 +129,7 @@ const IndexPage = ({
         <section style={{ height: '400px', display: 'flex' }}>
           <BlocPoles/>
         </section>
-        <SectionTitle>Latest stories</SectionTitle>
+        {/* <SectionTitle>Latest stories</SectionTitle>
         {posts.map(post => (
           <Article
             title={post.frontmatter.title}
@@ -140,7 +140,7 @@ const IndexPage = ({
             categories={post.frontmatter.categories}
             key={post.fields.slug}
           />
-        ))}
+        ))} */}
       </Content>
     </Wrapper>
   </Layout>
