@@ -1,13 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
-import styled, {keyframes} from 'styled-components'
+import styled, {keyframes, ThemeProvider} from 'styled-components'
 // import { useInterval } from '../components/useInterval'
 
 import { Layout, Wrapper, Button } from '../components'
 import BlocInfos from '../components/blocInfos/BlocInfos'
 import BlocHistoire from '../components/blocHistoire/BlocHistoire'
 import BlocPoles from '../components/blocPoles/BlocPoles'
+import BlocPrestation from '../components/blocPrestation/BlocPrestation'
 
 // import bck1 from '../../static/fdg4.jpg'
 import bck2 from '../img/fdg5.jpg'
@@ -100,19 +101,11 @@ const BoutonCTA2 = styled(BoutonCTA1)`
   border: 3px solid ${props => props.theme.colors.primary};
 `
 
-const Section = styled.section`
-  display: flex;
-  height: ${props => props.myHeight}
-  margin-top: ${props => props.marginTop}
-`
-
-
 const IndexPage = ({
   data: {
     allMdx: { nodes: posts },
   },
 }) => (
-
   <Layout>
     <Wrapper>
       <Content>
@@ -126,15 +119,18 @@ const IndexPage = ({
             </div>
           </div>
         </Hero>
-        <Section myHeight={160} marginTop={-80}>
-          <BlocInfos/>
-        </Section>
-        <Section myHeight={480}>
-          <BlocHistoire/>
-        </Section>
-        <Section myHeight={400}>
-          <BlocPoles/>
-        </Section>
+          <section style={{ display: 'flex', height: '160px', marginTop: '-80px' }}>
+            <BlocInfos/>
+          </section>
+          <section style={{ display: 'flex', height: '480px' }}>
+            <BlocHistoire/>
+          </section>
+          <section style={{ display: 'flex', height: '420px' }}>
+            <BlocPoles/>
+          </section>
+          <section style={{ display: 'flex', height: '480px' }}>
+            <BlocPrestation/>
+          </section>
       </Content>
     </Wrapper>
   </Layout>
