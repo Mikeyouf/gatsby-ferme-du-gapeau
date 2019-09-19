@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import bckImage from '../../img/fdg6.jpg'
+import bckImage from '../../img/fdg5.jpg'
 
 const Bloc = styled.div`
     background-color: #eee;
