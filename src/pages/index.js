@@ -2,16 +2,16 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 import styled, {keyframes} from 'styled-components'
-import { useInterval } from '../components/useInterval'
+// import { useInterval } from '../components/useInterval'
 
-import { Layout, Article, Wrapper, Button, SectionTitle } from '../components'
+import { Layout, Wrapper, Button } from '../components'
 import BlocInfos from '../components/blocInfos/BlocInfos'
 import BlocHistoire from '../components/blocHistoire/BlocHistoire'
 import BlocPoles from '../components/blocPoles/BlocPoles'
 
-import bck1 from '../../static/fdg4.jpg'
-import bck2 from '../../static/fdg5.jpg'
-import bck3 from '../../static/fdg6.jpg'
+// import bck1 from '../../static/fdg4.jpg'
+import bck2 from '../img/fdg5.jpg'
+// import bck3 from '../../static/fdg6.jpg'
 
 const Content = styled.div`
   grid-column: 1 / -1;
@@ -100,6 +100,12 @@ const BoutonCTA2 = styled(BoutonCTA1)`
   border: 3px solid ${props => props.theme.colors.primary};
 `
 
+const Section = styled.section`
+  display: flex;
+  height: ${props => props.myHeight}
+  margin-top: ${props => props.marginTop}
+`
+
 
 const IndexPage = ({
   data: {
@@ -120,27 +126,15 @@ const IndexPage = ({
             </div>
           </div>
         </Hero>
-        <section style={{ height: '160px', display: 'flex', marginTop: `-80px` }}>
+        <Section myHeight={160} marginTop={-80}>
           <BlocInfos/>
-        </section>
-        <section style={{ height: '480px', display: 'flex' }}>
+        </Section>
+        <Section myHeight={480}>
           <BlocHistoire/>
-        </section>
-        <section style={{ height: '400px', display: 'flex' }}>
+        </Section>
+        <Section myHeight={400}>
           <BlocPoles/>
-        </section>
-        {/* <SectionTitle>Latest stories</SectionTitle>
-        {posts.map(post => (
-          <Article
-            title={post.frontmatter.title}
-            date={post.frontmatter.date}
-            excerpt={post.excerpt}
-            timeToRead={post.timeToRead}
-            slug={post.fields.slug}
-            categories={post.frontmatter.categories}
-            key={post.fields.slug}
-          />
-        ))} */}
+        </Section>
       </Content>
     </Wrapper>
   </Layout>
