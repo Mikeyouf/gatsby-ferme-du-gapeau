@@ -7,6 +7,10 @@ const Bloc = styled.div`
     background-color: #eee;
     width: 100%;
 
+    @media (max-width: ${props => props.theme.breakpoints.phone}) {
+        display: none;
+    }
+
     img {
         max-width: 100%;
         max-height: 100%;

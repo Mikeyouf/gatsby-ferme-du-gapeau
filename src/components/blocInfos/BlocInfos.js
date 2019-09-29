@@ -16,17 +16,34 @@ const Bloc = styled.div`
     display: flex;
     align-items: start;
 
+    @media (max-width: ${props => props.theme.breakpoints.phone}) {
+        padding: 1em 0.7em;
+        height: 100px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+        text-align: center;
+    }
+
     h2 {
         font-size: 16px;
         color: #fff;
         font-family: 'josefin sans';
         margin-top: 0;
+
+        @media (max-width: ${props => props.theme.breakpoints.phone}) {
+            font-size: 15px;
+            text-align: center;
+        }
     }
 
     p {
         color: #808080;
         font-size: 15px;
         font-family: 'poppins';
+
+        @media (max-width: ${props => props.theme.breakpoints.phone}) {
+            font-size: 14px;
+            text-align: center;
+        }
     }
 
     img {
@@ -36,6 +53,10 @@ const Bloc = styled.div`
     :nth-child(4) {
         flex-grow: 1.8;
         position: relative;
+
+        @media (max-width: ${props => props.theme.breakpoints.phone}) {
+            padding: 0;
+        }
 
         .bloc-actu {
             position: absolute;
@@ -47,6 +68,11 @@ const Bloc = styled.div`
             height: 260px;
             background-color: ${props => props.theme.colors.primary};
 
+            @media (max-width: ${props => props.theme.breakpoints.phone}) {
+                position: relative;
+                padding: 0.8em;
+            }
+
             h3 {
                 font-size: 20px;
                 margin-top: 0;
@@ -56,21 +82,47 @@ const Bloc = styled.div`
                 font-weight: 500;
                 text-transform: uppercase;
                 z-index: 5;
+
+                @media (max-width: ${props => props.theme.breakpoints.phone}) {
+                    font-size: 18px;
+                    margin-bottom: 14px;
+                }
             }
 
             .actualites {
                 display: flex;
                 align-items: center;
 
+                @media (max-width: ${props => props.theme.breakpoints.phone}) {
+                    width: 100%;
+                    height: 200px;
+                    display: block;
+                    position: relative;
+                }
+
                 img {
                     width: 120px;
                     height: 120px;
+
+                    @media (max-width: ${props => props.theme.breakpoints.phone}) {
+                        width: 100%;
+                        height: 100%;
+                    }
                 }
 
                 p {
                     color: #fff;
                     text-align: justify;
                     font-family: 'poppins';
+                    
+                    @media (max-width: ${props => props.theme.breakpoints.phone}) {
+                        position: absolute;
+                        bottom: 0;
+                        background-color: rgba(0, 0, 0, 0.7);
+                        padding: 0.5em;
+                        margin: 0;
+                        font-size: 13px;
+                    }
                 }
             }
         }

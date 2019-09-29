@@ -18,12 +18,54 @@ const Content = styled.div`
   grid-column: 1 / -1;
   box-shadow: 0 4px 120px rgba(0, 0, 0, 0.1);
   @media (max-width: ${props => props.theme.breakpoints.tablet}) {
-    padding: 3rem 2rem;
+    padding: 0;
   }
   @media (max-width: ${props => props.theme.breakpoints.phone}) {
-    padding: 2rem 1.5rem;
+    padding: 0;
   }
   overflow: hidden;
+
+  .infos {
+    display: flex;
+    height: 160px;
+    margin-top: -80px;
+    background-color: white;
+
+    @media (max-width: ${props => props.theme.breakpoints.phone}) {
+      flex-direction: column;
+      height: 590px;
+    }
+  }
+
+  .histoire {
+    display: flex;
+    height: 480px;
+
+    @media (max-width: ${props => props.theme.breakpoints.phone}) {
+      display: none;
+      border: 3px solid red;
+    }
+  }
+
+  .poles {
+    display: flex;
+    height: 420px;
+
+    @media (max-width: ${props => props.theme.breakpoints.phone}) {
+      display: none;
+    }
+  }
+
+  .prestation {
+    display: flex;
+    height: 480px;
+
+    @media (max-width: ${props => props.theme.breakpoints.phone}) {
+      display: none;
+    }
+  }
+
+
 `
 
 const arrivee = keyframes`
@@ -57,6 +99,19 @@ const Hero = styled.div`
     text-shadow: 3px 3px 1px ${props => props.theme.colors.grey.default};
   }
 
+  h1 {
+    @media (max-width: ${props => props.theme.breakpoints.phone}) {
+      font-size: 1.7rem;
+      margin-bottom: 1em;
+    }
+  }
+
+  h3 {
+    @media (max-width: ${props => props.theme.breakpoints.phone}) {
+      font-size: 1.3rem;
+    }
+  }
+
   div:nth-child(1) {
     margin: auto 0;
     width: 100%;
@@ -66,11 +121,17 @@ const Hero = styled.div`
       margin-top: 4em;
       display: flex;
       justify-content: center;
+
+      @media (max-width: ${props => props.theme.breakpoints.phone}) {
+        margin-top: 2em;
+        flex-direction: column;
+      }
     }
   }
 
   @media (max-width: ${props => props.theme.breakpoints.phone}) {
-    padding: 2rem 1rem 4rem 1rem;
+    padding: 0;
+    min-height: 500px;
   }
 
   p {
@@ -94,6 +155,11 @@ const BoutonCTA1 = styled(Button)`
   font-family: 'poppins';
   text-transform: uppercase;
   font-weight: 600;
+
+  @media (max-width: ${props => props.theme.breakpoints.phone}) {
+    margin-bottom: 1em;
+  }
+
 `
 
 const BoutonCTA2 = styled(BoutonCTA1)`
@@ -119,16 +185,16 @@ const IndexPage = ({
             </div>
           </div>
         </Hero>
-          <section style={{ display: 'flex', height: '160px', marginTop: '-80px' }}>
+          <section className="infos">
             <BlocInfos/>
           </section>
-          <section style={{ display: 'flex', height: '480px' }}>
+          <section className="histoire">
             <BlocHistoire/>
           </section>
-          <section style={{ display: 'flex', height: '420px' }}>
+          <section className="poles">
             <BlocPoles/>
           </section>
-          <section style={{ display: 'flex', height: '480px' }}>
+          <section className="prestation">
             <BlocPrestation/>
           </section>
       </Content>
