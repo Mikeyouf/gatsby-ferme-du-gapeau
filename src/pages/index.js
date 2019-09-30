@@ -42,8 +42,12 @@ const Content = styled.div`
     height: 480px;
 
     @media (max-width: ${props => props.theme.breakpoints.phone}) {
-      display: none;
-      border: 3px solid red;
+      display: block;
+      height: 420px;
+
+      div {
+        height: 100%;
+      }
     }
   }
 
@@ -52,7 +56,8 @@ const Content = styled.div`
     height: 420px;
 
     @media (max-width: ${props => props.theme.breakpoints.phone}) {
-      display: none;
+      flex-direction: column;
+      height: 912px;
     }
   }
 
@@ -61,7 +66,12 @@ const Content = styled.div`
     height: 480px;
 
     @media (max-width: ${props => props.theme.breakpoints.phone}) {
-      display: none;
+      display: block;
+      height: 400px;
+
+      div {
+        height: 100%;
+      }
     }
   }
 
@@ -101,14 +111,14 @@ const Hero = styled.div`
 
   h1 {
     @media (max-width: ${props => props.theme.breakpoints.phone}) {
-      font-size: 1.7rem;
+      font-size: 1.9rem;
       margin-bottom: 1em;
     }
   }
 
   h3 {
     @media (max-width: ${props => props.theme.breakpoints.phone}) {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
     }
   }
 
@@ -157,6 +167,7 @@ const BoutonCTA1 = styled(Button)`
   font-weight: 600;
 
   @media (max-width: ${props => props.theme.breakpoints.phone}) {
+    margin: 0 auto;
     margin-bottom: 1em;
   }
 

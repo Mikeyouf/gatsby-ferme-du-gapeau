@@ -194,6 +194,10 @@ const Footer = styled.footer`
   span {
     font-size: 0.75rem;
   }
+
+  @media (max-width: ${props => props.theme.breakpoints.phone}) {
+    padding: 1rem;
+}
 `
 
 const Layout = ({ children, customSEO }) => {

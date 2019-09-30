@@ -20,7 +20,6 @@ const Bloc = styled.div`
         padding: 1em 0.7em;
         height: 100px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-        text-align: center;
     }
 
     h2 {
@@ -31,7 +30,6 @@ const Bloc = styled.div`
 
         @media (max-width: ${props => props.theme.breakpoints.phone}) {
             font-size: 15px;
-            text-align: center;
         }
     }
 
@@ -42,7 +40,6 @@ const Bloc = styled.div`
 
         @media (max-width: ${props => props.theme.breakpoints.phone}) {
             font-size: 14px;
-            text-align: center;
         }
     }
 

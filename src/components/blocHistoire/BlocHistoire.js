@@ -17,6 +17,10 @@ const Bloc = styled.div`
         min-width: 100%;
         min-height: 100%;
         object-fit: cover;
+
+        @media (max-width: ${props => props.theme.breakpoints.phone}) {
+            display: none;
+        }
     }
 
     :nth-child(2) {
@@ -35,10 +39,19 @@ const BlocTexte = styled.div`
     margin-left: -3.5em;
     margin-right: 3.5em;
 
+    @media (max-width: ${props => props.theme.breakpoints.phone}) {
+        margin: 0;
+        box-sizing: border-box;
+    }
+
     h2 {
         color: ${props => props.theme.colors.primary};
         font-family: 'great vibes';
         margin: 0;
+
+        @media (max-width: ${props => props.theme.breakpoints.phone}) {
+            text-align: center;
+        }
     }
 
     h3 {
@@ -46,12 +59,21 @@ const BlocTexte = styled.div`
         text-transform: uppercase;
         font-family: 'josefin sans';
         margin-top: -15px;
+
+        @media (max-width: ${props => props.theme.breakpoints.phone}) {
+            text-align: center;
+        }
     }
 
     p {
         color: #808080;
         font-size: 15px;
         line-height: 27px;
+
+        @media (max-width: ${props => props.theme.breakpoints.phone}) {
+            font-size: 14px;
+            line-height: 25px;
+        }
     }
 `
 

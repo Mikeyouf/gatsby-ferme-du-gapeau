@@ -28,6 +28,10 @@ const BlocImage = styled.div`
     justify-content: space-evenly;
     align-content: space-evenly;
 
+    @media (max-width: ${props => props.theme.breakpoints.phone}) {
+        display: none;
+    }
+
     div {
         width: 240px;
         height: 160px;
@@ -66,10 +70,18 @@ const BlocTexte = styled.div`
     font-family: 'poppins';
     padding: 1em;
 
+    @media (max-width: ${props => props.theme.breakpoints.phone}) {
+        box-sizing: border-box;
+    }
+
     h2 {
         color: ${props => props.theme.colors.primary};
         font-family: 'great vibes';
         margin: 0;
+
+        @media (max-width: ${props => props.theme.breakpoints.phone}) {
+            text-align: center;
+        }
     }
 
     h3 {
@@ -77,6 +89,10 @@ const BlocTexte = styled.div`
         text-transform: uppercase;
         font-family: 'josefin sans';
         margin-top: -15px;
+
+        @media (max-width: ${props => props.theme.breakpoints.phone}) {
+            text-align: center;
+        }
     }
 
     p {
@@ -84,6 +100,11 @@ const BlocTexte = styled.div`
         font-size: 15px;
         line-height: 27px;
         text-align: justify;
+
+        @media (max-width: ${props => props.theme.breakpoints.phone}) {
+            font-size: 14px;
+            line-height: 25px;
+        }
     }
 `
 
