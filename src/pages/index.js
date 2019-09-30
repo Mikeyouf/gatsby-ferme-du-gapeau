@@ -31,6 +31,10 @@ const Content = styled.div`
     margin-top: -80px;
     background-color: white;
 
+    @media (max-width: ${props => props.theme.breakpoints.tabletPortrait}) {
+      flex-wrap: wrap;
+    }
+
     @media (max-width: ${props => props.theme.breakpoints.phone}) {
       flex-direction: column;
       height: 590px;

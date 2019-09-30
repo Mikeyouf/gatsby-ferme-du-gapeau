@@ -15,8 +15,6 @@ const Bloc = styled.div`
         display: flex;
         align-items: center;
     }
-
-
 `
 
 const BlocImage = styled.div`
