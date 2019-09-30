@@ -31,14 +31,14 @@ const Content = styled.div`
     margin-top: -80px;
     background-color: white;
 
-    @media (max-width: ${props => props.theme.breakpoints.phone}) {
-      flex-direction: column;
-      height: 590px;
-    }
-
     @media (max-width: ${props => props.theme.breakpoints.tabletPortrait}) {
       flex-wrap: wrap;
       height: 140px;
+    }
+
+    @media (max-width: ${props => props.theme.breakpoints.phone}) {
+      flex-direction: column;
+      height: 590px;
     }
   }
 
@@ -64,6 +64,10 @@ const Content = styled.div`
     display: flex;
     height: 420px;
 
+    @media (max-width: ${props => props.theme.breakpoints.tabletPortrait}) {
+      height: 400px;
+    }
+
     @media (max-width: ${props => props.theme.breakpoints.phone}) {
       flex-direction: column;
       height: 912px;
@@ -73,6 +77,10 @@ const Content = styled.div`
   .prestation {
     display: flex;
     height: 480px;
+
+    @media (max-width: ${props => props.theme.breakpoints.tabletPortrait}) {
+      
+    }
 
     @media (max-width: ${props => props.theme.breakpoints.phone}) {
       display: block;

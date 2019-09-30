@@ -30,6 +30,11 @@ const Bloc = styled.div`
     flex-direction: column;
     justify-content: center;
 
+    @media (max-width: ${props => props.theme.breakpoints.tabletPortrait}) {
+        box-sizing: border-box;
+        height: 400px;
+    }
+
     @media (max-width: ${props => props.theme.breakpoints.phone}) {
         height: 304px;
     }
@@ -42,6 +47,12 @@ const BlocTexte = styled.div`
     text-align: center;
     font-family: 'poppins';
     padding: 1em;
+    height: 350px;
+
+    @media (max-width: ${props => props.theme.breakpoints.tabletPortrait}) {
+        box-sizing: border-box;
+        height: 340px;
+    }
 
     @media (max-width: ${props => props.theme.breakpoints.phone}) {
         box-sizing: border-box;
@@ -53,6 +64,11 @@ const BlocTexte = styled.div`
         height: 100px;
         padding: 0.6em;
         margin-bottom: 0.7em;
+
+        @media (max-width: ${props => props.theme.breakpoints.tabletPortrait}) {
+            width: 75px;
+            height: 80px;
+        }
 
         @media (max-width: ${props => props.theme.breakpoints.phone}) {
             width: 70px;
@@ -70,6 +86,11 @@ const BlocTexte = styled.div`
         font-family: 'josefin sans';
         line-height: 28px;
 
+        @media (max-width: ${props => props.theme.breakpoints.tabletPortrait}) {
+            font-size: 17px;
+            line-height: 26px;
+        }
+
         @media (max-width: ${props => props.theme.breakpoints.phone}) {
             font-size: 16px;
             line-height: 25px;
@@ -81,6 +102,11 @@ const BlocTexte = styled.div`
         font-family: 'poppins';
         color: #000;
         line-height: 27px;
+
+        @media (max-width: ${props => props.theme.breakpoints.tabletPortrait}) {
+            font-size: 15px;
+            line-height: 25px;
+        }
 
         @media (max-width: ${props => props.theme.breakpoints.phone}) {
             font-size: 14px;
