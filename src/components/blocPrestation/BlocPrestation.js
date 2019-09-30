@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 
 import bckImage1 from '../../../static/fdg5.jpg'
-import bckImage2 from '../../../static/fdg4.jpg'
-import bckImage3 from '../../../static/fdg6.jpg'
+// import bckImage2 from '../../../static/fdg4.jpg'
+// import bckImage3 from '../../../static/fdg6.jpg'
 // import bckImage from '../../img/fdg5.jpg'
 
 const Bloc = styled.div`
@@ -135,11 +135,11 @@ const BlocPrestation = () => {
                 <p className={isHover === 1 ? 'visible' : 'hidden'} >Pôle travail</p>
             </div>
             <div onMouseEnter={() => changeHover(2)} onMouseLeave={() => setIsHover(false)} naidme="2">
-                <img src={bckImage2} alt="ferme du gapeau"/>
+                <img src={bckImage1} alt="ferme du gapeau"/>
                 <p className={isHover === 2 ? 'visible' : 'hidden'}>Pôle restauration</p>
             </div>
             <div onMouseEnter={() => changeHover(3)} onMouseLeave={() => setIsHover(false)} id="3">
-                <img src={bckImage3} alt="ferme du gapeau"/>
+                <img src={bckImage1} alt="ferme du gapeau"/>
                 <p className={isHover === 3 ? 'visible' : 'hidden'}>Pôle social</p>
             </div>
             <div onMouseEnter={() => changeHover(4)} onMouseLeave={() => setIsHover(false)} id="4">
