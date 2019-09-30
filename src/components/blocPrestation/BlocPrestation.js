@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 
-import bckImage1 from '../../img/fdg5.jpg'
-import bckImage2 from '../../img/fdg4.jpg'
-import bckImage3 from '../../img/fdg6.jpg'
+import bckImage1 from '../../../static/fdg5.jpg'
+import bckImage2 from '../../../static/fdg4.jpg'
+import bckImage3 from '../../../static/fdg6.jpg'
 // import bckImage from '../../img/fdg5.jpg'
 
 const Bloc = styled.div`

@@ -39,6 +39,11 @@ const BlocTexte = styled.div`
     margin-left: -3.5em;
     margin-right: 3.5em;
 
+    @media (max-width: ${props => props.theme.breakpoints.tabletPortrait}) {
+        margin: 0;
+        box-sizing: border-box;
+    }
+
     @media (max-width: ${props => props.theme.breakpoints.phone}) {
         margin: 0;
         box-sizing: border-box;
@@ -48,6 +53,11 @@ const BlocTexte = styled.div`
         color: ${props => props.theme.colors.primary};
         font-family: 'great vibes';
         margin: 0;
+
+        @media (max-width: ${props => props.theme.breakpoints.tabletPortrait}) {
+            text-align: center;
+            font-size: 2rem;
+        }
 
         @media (max-width: ${props => props.theme.breakpoints.phone}) {
             text-align: center;
@@ -60,6 +70,11 @@ const BlocTexte = styled.div`
         font-family: 'josefin sans';
         margin-top: -15px;
 
+        @media (max-width: ${props => props.theme.breakpoints.tabletPortrait}) {
+            text-align: center;
+            font-size: 1.8rem;
+        }
+
         @media (max-width: ${props => props.theme.breakpoints.phone}) {
             text-align: center;
         }
@@ -68,7 +83,11 @@ const BlocTexte = styled.div`
     p {
         color: #808080;
         font-size: 15px;
-        line-height: 27px;
+        
+        @media (max-width: ${props => props.theme.breakpoints.tabletPortrait}) {
+            font-size: 14px;
+            line-height: 25px;
+        }
 
         @media (max-width: ${props => props.theme.breakpoints.phone}) {
             font-size: 14px;
