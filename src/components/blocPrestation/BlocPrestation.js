@@ -26,6 +26,10 @@ const BlocImage = styled.div`
     justify-content: space-evenly;
     align-content: space-evenly;
 
+    @media (max-width: ${props => props.theme.breakpoints.tabletPortrait}) {
+        align-content: center;
+    }
+
     @media (max-width: ${props => props.theme.breakpoints.phone}) {
         display: none;
     }
@@ -33,6 +37,12 @@ const BlocImage = styled.div`
     div {
         width: 240px;
         height: 160px;
+
+        @media (max-width: ${props => props.theme.breakpoints.tabletPortrait}) {
+            width: 180px;
+            height: 120px;
+            margin: 0.5em 0;
+        }
     }
 
     img {
@@ -46,17 +56,31 @@ const BlocImage = styled.div`
         text-align: center;
         background-color: rgba(0, 0, 0, 0.7);
         padding: 1em 0;
+
+        @media (max-width: ${props => props.theme.breakpoints.tabletPortrait}) {
+            background-color: rgba(0, 0, 0, 0.4);
+            padding: 0.5em 0;
+        }
     }
 
     .visible {
         opacity: 1;
         transform: translateY(-120px);
         transition: all 0.4s ease-in;
+
+        @media (max-width: ${props => props.theme.breakpoints.tabletPortrait}) {
+            transform: translateY(-100px);
+        }
     }
 
     .hidden {
         opacity: 0;
         transition: all 0.4s ease-in;
+
+        @media (max-width: ${props => props.theme.breakpoints.tabletPortrait}) {
+            transform: translateY(-100px);
+            opacity: 1;
+        }
     }
 
 `
@@ -77,6 +101,11 @@ const BlocTexte = styled.div`
         font-family: 'great vibes';
         margin: 0;
 
+        @media (max-width: ${props => props.theme.breakpoints.tabletPortrait}) {
+            text-align: center;
+            font-size: 2rem;
+        }
+
         @media (max-width: ${props => props.theme.breakpoints.phone}) {
             text-align: center;
         }
@@ -88,6 +117,11 @@ const BlocTexte = styled.div`
         font-family: 'josefin sans';
         margin-top: -15px;
 
+        @media (max-width: ${props => props.theme.breakpoints.tabletPortrait}) {
+            text-align: center;
+            font-size: 1.8rem;
+        }
+
         @media (max-width: ${props => props.theme.breakpoints.phone}) {
             text-align: center;
         }
@@ -98,6 +132,11 @@ const BlocTexte = styled.div`
         font-size: 15px;
         line-height: 27px;
         text-align: justify;
+
+        @media (max-width: ${props => props.theme.breakpoints.tabletPortrait}) {
+            font-size: 14px;
+            line-height: 25px;
+        }
 
         @media (max-width: ${props => props.theme.breakpoints.phone}) {
             font-size: 14px;

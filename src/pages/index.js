@@ -79,7 +79,7 @@ const Content = styled.div`
     height: 480px;
 
     @media (max-width: ${props => props.theme.breakpoints.tabletPortrait}) {
-      
+      height: 400px;
     }
 
     @media (max-width: ${props => props.theme.breakpoints.phone}) {
@@ -134,6 +134,10 @@ const Hero = styled.div`
   }
 
   h3 {
+    @media (max-width: ${props => props.theme.breakpoints.tabletPortrait}) {
+      font-size: 1.4rem;
+    }
+
     @media (max-width: ${props => props.theme.breakpoints.phone}) {
       font-size: 1.2rem;
     }
@@ -182,6 +186,10 @@ const BoutonCTA1 = styled(Button)`
   font-family: 'poppins';
   text-transform: uppercase;
   font-weight: 600;
+
+  @media (max-width: ${props => props.theme.breakpoints.tabletPortrait}) {
+    width: 240px;
+  }
 
   @media (max-width: ${props => props.theme.breakpoints.phone}) {
     margin: 0 auto;

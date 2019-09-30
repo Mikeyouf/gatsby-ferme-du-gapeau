@@ -195,9 +195,13 @@ const Footer = styled.footer`
     font-size: 0.75rem;
   }
 
+  @media (max-width: ${props => props.theme.breakpoints.tabletPortrait}) {
+    padding: 1.5rem 0.8rem;
+  }
+
   @media (max-width: ${props => props.theme.breakpoints.phone}) {
     padding: 1rem;
-}
+  }
 `
 
 const Layout = ({ children, customSEO }) => {
